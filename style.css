@@ -1,0 +1,325 @@
+/*
+Visual scale 
+
+2.488rem/39.81px	A Visual Type Scale
+2.074rem/33.18px	A Visual Type Scale
+1.728rem/27.65px	A Visual Type Scale
+1.44rem/23.04px	A Visual Type Scale
+1.2rem/19.20px	A Visual Type Scale
+1rem/16.00px	A Visual Type Scale
+0.833rem/13.33px	A Visual Type Scale
+0.694rem/11.11px	A Visual Type Scale
+0.579rem/9.26px	A Visual Type Scale
+*/
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Typography */
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  background-image: url(images/pattern-background-mobile.svg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 90rem 27.313rem, cover;
+  background-color: #d6e1ff;
+  background-blend-mode: color-burn;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-title {
+  font-weight: 900;
+  font-size: 1.375rem;
+  line-height: 1.8125rem;
+  text-align: center;
+  color: #1f2e55;
+  margin-bottom: 1rem;
+}
+
+.order-text {
+  width: 16.438rem;
+  height: 4.688rem;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: #717fa6;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Layout */
+
+.container {
+  background-color: #fff;
+  width: 20.438rem;
+  height: 35.438rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 11px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 1rem;
+}
+
+.hero-img-container {
+  width: 100%;
+  height: 10rem;
+  background-image: url(images/illustration-hero.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  margin-bottom: 2rem;
+}
+
+.annual-plan-container {
+  background-color: #f7f9ff;
+  width: 17.438rem;
+  height: 5.063rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  margin-bottom: 1.5rem;
+}
+
+.annual-plan-container-inner {
+  width: 15.438rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.annual-plan-info {
+  margin-right: 2rem;
+}
+
+.annual-plan-title {
+  font-weight: 900;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  color: #1f2e55;
+}
+
+.annual-plan-price {
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  color: #717fa6;
+}
+
+.change-link:link,
+.change-link:visited {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  text-decoration-line: underline;
+  color: #382ae1;
+}
+
+.change-link:hover,
+.change-link:active {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.btn-payment:link,
+.btn-payment:visited {
+  font-weight: 900;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  display: inline-block;
+  color: #fff;
+  width: 17.438rem;
+  height: 3.125rem;
+  background-color: #382ae1;
+  text-decoration: none;
+  padding: 0.9375rem 4rem;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin-bottom: 1.5rem;
+}
+
+.btn-payment:hover,
+.btn-payment:active {
+  background-color: #766cf1;
+  box-shadow: 0px 20px 20px 0px #382ae131;
+  filter: drop-shadow(0px 20px 20px rgba(56, 42, 225, 0.190291));
+}
+
+.cancel:link,
+.cancel:visited {
+  font-weight: 900;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: #717fa6;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.cancel:hover,
+.cancel:active {
+  color: #1f2e55;
+}
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  color: #1f2e55;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  /* color: #1f2e55; */
+}
+
+@media (min-width: 1440px) {
+  .body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+
+  .container {
+    width: 28.125rem;
+    height: 43.5625rem;
+  }
+
+  .hero-img-container {
+    width: 100%;
+    height: 13.75rem;
+    margin-bottom: 2.8125rem;
+  }
+
+  .order-title {
+    font-size: 1.75rem;
+    line-height: 2.3125rem;
+    margin-bottom: 1.0625rem;
+  }
+
+  .order-text {
+    width: 22.125rem;
+    height: 4.875rem;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    margin-bottom: 1.25rem;
+  }
+  .annual-plan-container {
+    width: 22.125rem;
+    height: 6.125rem;
+    margin-bottom: 2rem;
+  }
+
+  .annual-plan-container-inner {
+    width: 19.125rem;
+    height: 3rem;
+  }
+  .annual-plan-info {
+    margin-right: 4rem;
+  }
+
+  .annual-plan-title,
+  .annual-plan-price {
+    font-size: 1rem;
+    line-height: 1.3125rem;
+  }
+
+  .change-link:link,
+  .change-link:visited {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+
+  .btn-payment:link,
+  .btn-payment:visited {
+    width: 22.125rem;
+    height: 3.125rem;
+    margin-bottom: 2rem;
+  }
+
+  .change-link:hover,
+  .change-link:active {
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+}
